@@ -1,1 +1,1 @@
-# StockSectorAnalysis
+# FinancialWebScraper
