@@ -1,7 +1,13 @@
 #Dependencies and Set up
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
 import requests
-import time
+import json
 
+
+url = ('https://www.alphavantage.co/query?function=SECTOR&apikey=DIH7DPEEI0O1P4FW')
+
+response = requests.get(url)
+
+data = response.text
+parsed = json.loads(data)
+
+print (data)
